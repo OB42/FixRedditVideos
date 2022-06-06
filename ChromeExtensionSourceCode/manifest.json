@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Fix Reddit videos",
+  "version": "0.1",
+ "icons": {
+    "128": "128.png",
+    "48": "48.png"
+  },  "description": "Fix the buggy video player that don't load correctly on reddit.com(you can't change the volume or resolution for now, maybe I'll add it later)",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.reddit.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}

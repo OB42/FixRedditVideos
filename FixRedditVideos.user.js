@@ -23,7 +23,7 @@ setInterval(() => {
                 video.onpause = function () { audio.pause(); }
                 console.log(`Fixed the fucking reddit video with ID#`, id)
             } catch (err) {
-                console.warn('Error while fixing the fucking reddit videos, fuck reddit', id, source)
+                console.warn('Error while fixing the fucking reddit videos, fuck reddit', oldVideo, i)
             }
         })
 }, 42)
